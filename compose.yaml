@@ -1,0 +1,12 @@
+services:
+  service-a:
+    build: ./serviceA
+    ports:
+      - "8082:8082"
+    environment:
+      SERVICE_C_URL: http://service-c:8080
+    depends_on:
+      - service-c
+
+  service-c:
+    build: ./serviceC

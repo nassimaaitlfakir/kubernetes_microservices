@@ -1,0 +1,10 @@
+# Variables d'environnement
+.env
+.env.*
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# VS Code
+.vscode/
